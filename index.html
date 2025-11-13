@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boş Sayfa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iibrahimkoc Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #4CAF50;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #333;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: #4CAF50;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <p>selam</p>
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="iibrahimkoc" class="profile-img">
+    <h1>İbrahim Koç</h1>
+    <p>Frontend Developer & UX/UI Enthusiast<br>HTML, CSS, JavaScript</p>
+    <div class="socials">
+      <a href="https://github.com/iibrahimkoc">GitHub</a>
+      <a href="www.linkedin.com/in/iibrahimkoc">LinkedIn</a>
+      <a href="#">Portfolio</a>
+    </div>
+  </div>
 </body>
 </html>
