@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="apple-itunes-app" content="app-id=6458192740">
+  <!-- Android uygulaman için: -->
+  <meta name="google-play-app" content="app-id=com.aexagency.biogrenci&hl=tr">
+  <meta name="smartbanner:title" content="bi öğrenci">
+  <meta name="smartbanner:author" content="bi öğrenci">
+  <meta name="smartbanner:price" content="FREE">
+  <meta name="smartbanner:icon-google" content="URL_TO_YOUR_ANDROID_APP_ICON">
+  <meta name="smartbanner:icon-apple" content="URL_TO_YOUR_IOS_APP_ICON">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iibrahimkoc Portfolio</title>
   <style>
@@ -76,5 +83,15 @@
       <a href="#">Portfolio</a>
     </div>
   </div>
+
+  <link rel="stylesheet" href="path/to/smartbanner.min.css">
+  <script src="path/to/smartbanner.min.js"></script>
+  <script>
+    new SmartBanner({
+      // opsiyonel: başlık, buton yazısı vs
+      button: 'İndir / Aç',
+      store: { ios: 'On the App Store', android: 'In Google Play' }
+    });
+  </script>
 </body>
 </html>
